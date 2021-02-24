@@ -1,0 +1,489 @@
+2019-08-01 20:43:26.533  WARN 960 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/Develop/gradle-5.5.1-bin/home/caches/modules-2/files-2.1/org.json/json/20170516/949abe1460757b8dc9902c562f83e49675444572/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wfzzq/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-08-01 20:43:26.546  INFO 960 --- [Test worker] test.top.blockchain.TestIndexController  : Starting TestIndexController on DESKTOP-CQISV8A with PID 960 (started by wfzzq in D:\github\mycoin\BlockChainService)
+2019-08-01 20:43:26.548  INFO 960 --- [Test worker] test.top.blockchain.TestIndexController  : No active profile set, falling back to default profiles: default
+2019-08-01 20:43:26.571  INFO 960 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1d77488b: startup date [Thu Aug 01 20:43:26 CST 2019]; root of context hierarchy
+2019-08-01 20:43:28.885  INFO 960 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 20:43:29.098  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1d77488b: startup date [Thu Aug 01 20:43:26 CST 2019]; root of context hierarchy
+2019-08-01 20:43:29.181  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.IndexController.index(top.blockchain.model.IndexModel) throws java.lang.Exception
+2019-08-01 20:43:29.184  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/admin/add]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.AdminController.add(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.184  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/admin/delete]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.AdminController.delete(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.185  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/admin/query]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.AdminController.query(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.185  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/admin/login]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.AdminController.login(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.186  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/admin/logout]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.AdminController.logout(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.186  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/admin/modify]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.AdminController.modify(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.187  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/balanceRecord/cancel]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageBalanceRecordController.cancel(top.blockchain.model.admin.BalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.188  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/balanceRecord/queryBalanceRecord]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageBalanceRecordController.queryBalanceRecord(top.blockchain.model.admin.BalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.189  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/config/modifySiteConfig]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageConfigController.modifySiteConfig(top.blockchain.model.admin.ManageConfigModel) throws java.lang.Exception
+2019-08-01 20:43:29.190  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/config/modifyPhoneCheck]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageConfigController.modifyPhoneCheck(top.blockchain.model.admin.ManageConfigModel) throws java.lang.Exception
+2019-08-01 20:43:29.190  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/config/modifySms]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageConfigController.modifySms(top.blockchain.model.admin.ManageConfigModel) throws java.lang.Exception
+2019-08-01 20:43:29.191  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/config/loadConfig]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageConfigController.loadConfig(top.blockchain.model.admin.ManageConfigModel) throws java.lang.Exception
+2019-08-01 20:43:29.191  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/paybalanceupdate/query]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManagePayBalanceUpdateController.query(top.blockchain.model.admin.PayBalanceUpdateModel) throws java.lang.Exception
+2019-08-01 20:43:29.194  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/siteNotice/update]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageSiteNoticeController.update(top.blockchain.model.admin.SiteNoticeModel) throws java.lang.Exception
+2019-08-01 20:43:29.195  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/siteNotice/save]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageSiteNoticeController.save(top.blockchain.model.admin.SiteNoticeModel) throws java.lang.Exception
+2019-08-01 20:43:29.195  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/siteNotice/queryAll]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageSiteNoticeController.queryAll(top.blockchain.model.admin.SiteNoticeModel) throws java.lang.Exception
+2019-08-01 20:43:29.196  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/userbalancerecord/queryAll]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageUserBalanceRecordController.queryAll(top.blockchain.model.admin.ManageUserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.197  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/user/delete]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageUserController.delete(top.blockchain.model.admin.ManageUserModel) throws java.lang.Exception
+2019-08-01 20:43:29.197  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/user/updatePassword]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageUserController.updatePassword(top.blockchain.model.admin.AdminModel) throws java.lang.Exception
+2019-08-01 20:43:29.198  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/user/queryAll]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageUserController.queryAll(top.blockchain.model.admin.ManageUserModel) throws java.lang.Exception
+2019-08-01 20:43:29.199  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/user/undelete]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.ManageUserController.undelete(top.blockchain.model.admin.ManageUserModel) throws java.lang.Exception
+2019-08-01 20:43:29.199  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/manage/paybalancerecord/addPayBalanceRecord]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.manage.PayBalanceRecordController.addPayBalanceRecord(top.blockchain.model.admin.PayBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.212  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/util/getConfig]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.other.UtilController.getConfig(top.blockchain.model.user.UserUtilModel) throws java.lang.Exception
+2019-08-01 20:43:29.212  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/util/sendPhoneCode]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.other.UtilController.sendPhoneCode(top.blockchain.model.other.PhoneCodeModel) throws java.lang.Exception
+2019-08-01 20:43:29.213  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/util/validate.jpg]}" onto public void top.blockchain.controller.other.UtilController.imageCode(top.blockchain.model.user.UserUtilModel,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-08-01 20:43:29.214  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temp/test]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.temp.TestController.index(top.blockchain.model.temp.TestModel)
+2019-08-01 20:43:29.214  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temp/test/addSmsConfig]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.temp.TestController.addSmsConfig(top.blockchain.model.temp.TestModel) throws java.lang.Exception
+2019-08-01 20:43:29.214  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temp/test/loadSmsConfig]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.temp.TestController.loadSmsConfig(top.blockchain.model.temp.TestModel) throws java.lang.Exception
+2019-08-01 20:43:29.215  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temp/login/test]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.temp.TestLoginController.test(top.blockchain.model.temp.TestLoginModel) throws java.lang.Exception
+2019-08-01 20:43:29.217  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/finish]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.finish(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.217  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/cancel]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.cancel(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.217  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/addBuyBalanceRecord]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.addBuyBalanceRecord(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.218  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/recast]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.ReadOnlyClassToSerializerMap(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.218  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/queryUserNowOrder]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.queryUserNowOrder(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.218  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/pay]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.pay(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.219  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/queryUserOrders]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.queryUserOrders(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.219  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/sendToUser]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.sendToUser(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.219  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/addBalanceRecord]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.addBalanceRecord(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.219  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/sell]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.sell(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.220  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userBalanceRecord/queryBuys]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserBalanceRecordController.queryBuys(top.blockchain.model.user.UserBalanceRecordModel) throws java.lang.Exception
+2019-08-01 20:43:29.221  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserController.add(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.221  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserController.login(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.222  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserController.logout(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.222  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/foundPassword]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserController.foundPassword(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.222  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/queryTeam]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserController.queryTeam(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.224  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/queryBalanceRecord]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.queryBalanceRecord(top.blockchain.model.UserInfoModel) throws java.lang.Exception
+2019-08-01 20:43:29.225  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/queryUserInfoByKey]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.queryUserInfoByKey(top.blockchain.model.UserInfoModel) throws java.lang.Exception
+2019-08-01 20:43:29.225  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.modifyPassword(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.226  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPaypwd]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.modifyPaypwd(top.blockchain.model.user.UserModel) throws java.lang.Exception
+2019-08-01 20:43:29.226  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyWechat]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.modifyWechat(top.blockchain.model.UserInfoModel) throws java.lang.Exception
+2019-08-01 20:43:29.226  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyAlipay]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.modifyAlipay(top.blockchain.model.UserInfoModel) throws java.lang.Exception
+2019-08-01 20:43:29.227  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/vip]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.vip(top.blockchain.model.UserInfoModel) throws java.lang.Exception
+2019-08-01 20:43:29.227  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyNickName]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserInfoController.modifyNickName(top.blockchain.model.UserInfoModel) throws java.lang.Exception
+2019-08-01 20:43:29.227  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/siteNotice/queryAll]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserSiteNoticeController.queryAll(top.blockchain.model.user.UserSiteNoticeModel) throws java.lang.Exception
+2019-08-01 20:43:29.228  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/util/phoneCheck]}" onto public top.blockchain.util.JsonMessage top.blockchain.controller.user.UserUtilController.phoneCheck(top.blockchain.model.user.UserUtilModel) throws java.lang.Exception
+2019-08-01 20:43:29.230  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-01 20:43:29.231  INFO 960 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-01 20:43:29.284  INFO 960 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in myExceptionHandler
+2019-08-01 20:43:29.632  INFO 960 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2019-08-01 20:43:29.632  INFO 960 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2019-08-01 20:43:29.650  INFO 960 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 18 ms
+2019-08-01 20:43:29.693  INFO 960 --- [Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-08-01 20:43:29.706  INFO 960 --- [Test worker] test.top.blockchain.TestIndexController  : Started TestIndexController in 3.489 seconds (JVM running for 4.403)
+2019-08-01 20:43:29.730  INFO 960 --- [pool-1-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-01 20:43:31.671 ERROR 960 --- [pool-1-thread-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) [HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) [HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-2.7.9.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) [mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) [mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) [mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143) [pagehelper-5.1.4.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) [mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy126.query(Unknown Source) [na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) [mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) [mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy99.selectOne(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) [mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83) [mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) [mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy102.queryNow(Unknown Source) [na:na]
+	at top.blockchain.service.impl.SchedulingServiceImpl.showTime(SchedulingServiceImpl.java:63) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_221]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_221]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	... 52 common frames omitted
+Caused by: java.net.UnknownHostException: ?????·????÷
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_221]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_221]
+	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:179) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	... 55 common frames omitted
+
+2019-08-01 20:43:31.674  INFO 960 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-01 20:43:31.675 ERROR 960 --- [pool-1-thread-1] t.b.service.impl.SchedulingServiceImpl   : nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in top/blockchain/mapper/TbConfigMapper.xml
+### The error may involve top.blockchain.dao.TbConfigDAO.queryNow
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-08-01 20:43:32.684 ERROR 960 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) [HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) [HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-2.7.9.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262) [spring-jdbc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378) [spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474) [spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289) [spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at top.blockchain.service.impl.TokenServiceImpl$$EnhancerBySpringCGLIB$$8b3c8725.saveOrUpdate(<generated>) [main/:na]
+	at top.blockchain.filter.ControllerToken.doAround(ControllerToken.java:62) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at top.blockchain.controller.IndexController$$EnhancerBySpringCGLIB$$1ab43e6c.index(<generated>) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:165) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at test.top.blockchain.TestIndexController.testIndex(TestIndexController.java:28) [test/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-5.5.1.jar:5.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-5.5.1.jar:5.5.1]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) [gradle-testing-base-5.5.1.jar:5.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-5.5.1.jar:5.5.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-5.5.1.jar:5.5.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-5.5.1.jar:5.5.1]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_221]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_221]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	... 121 common frames omitted
+Caused by: java.net.UnknownHostException: 数据库服务器地址
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_221]
+	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:179) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	... 124 common frames omitted
+
+2019-08-01 20:43:32.692 ERROR 960 --- [Test worker] t.blockchain.config.MyExceptionHandler   : 处理发生错误
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305) ~[spring-jdbc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at top.blockchain.service.impl.TokenServiceImpl$$EnhancerBySpringCGLIB$$8b3c8725.saveOrUpdate(<generated>) ~[main/:na]
+	at top.blockchain.filter.ControllerToken.doAround(ControllerToken.java:62) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at top.blockchain.controller.IndexController$$EnhancerBySpringCGLIB$$1ab43e6c.index(<generated>) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:165) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at test.top.blockchain.TestIndexController.testIndex(TestIndexController.java:28) [test/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) [gradle-testing-jvm-5.5.1.jar:5.5.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-5.5.1.jar:5.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-5.5.1.jar:5.5.1]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) [gradle-testing-base-5.5.1.jar:5.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-5.5.1.jar:5.5.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-5.5.1.jar:5.5.1]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-5.5.1.jar:5.5.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-5.5.1.jar:5.5.1]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-2.7.9.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262) ~[spring-jdbc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 109 common frames omitted
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_221]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_221]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	... 121 common frames omitted
+Caused by: java.net.UnknownHostException: 数据库服务器地址
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_221]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_221]
+	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:179) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57) ~[mysql-connector-java-6.0.6.jar:6.0.6]
+	... 124 common frames omitted
+
+2019-08-01 20:43:32.732  INFO 960 --- [Thread-7] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1d77488b: startup date [Thu Aug 01 20:43:26 CST 2019]; root of context hierarchy
